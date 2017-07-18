@@ -28,7 +28,6 @@
 		74E106271F1E7FFF00178BCF /* Device+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E106261F1E7FFF00178BCF /* Device+air.swift */; };
 		74E106291F1E803F00178BCF /* CollectionView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E106281F1E803F00178BCF /* CollectionView+air.swift */; };
 		74E1062B1F1E823000178BCF /* airLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1062A1F1E823000178BCF /* airLogging.swift */; };
-		74E1062F1F1E833E00178BCF /* Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1062E1F1E833E00178BCF /* Designables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		74E106261F1E7FFF00178BCF /* Device+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Device+air.swift"; path = "Sources/Device+air.swift"; sourceTree = SOURCE_ROOT; };
 		74E106281F1E803F00178BCF /* CollectionView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CollectionView+air.swift"; path = "Sources/CollectionView+air.swift"; sourceTree = SOURCE_ROOT; };
 		74E1062A1F1E823000178BCF /* airLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = airLogging.swift; path = Sources/airLogging.swift; sourceTree = SOURCE_ROOT; };
-		74E1062E1F1E833E00178BCF /* Designables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Designables.swift; path = Sources/Designables.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +143,6 @@
 			children = (
 				74E106041F1E7B8600178BCF /* Button+ClosureHandler.swift */,
 				74E106281F1E803F00178BCF /* CollectionView+air.swift */,
-				74E1062E1F1E833E00178BCF /* Designables.swift */,
 				74E106261F1E7FFF00178BCF /* Device+air.swift */,
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
 				74E1061E1F1E7FD300178BCF /* UIImage+air.swift */,
@@ -285,7 +282,6 @@
 				74E106151F1E7E2500178BCF /* UITextView+air.swift in Sources */,
 				74E106031F1E7B8300178BCF /* Dictionary+air.swift in Sources */,
 				74E106211F1E7FD300178BCF /* UIImage+air.swift in Sources */,
-				74E1062F1F1E833E00178BCF /* Designables.swift in Sources */,
 				74E106161F1E7E2500178BCF /* UIView+AutoLayoutHelpers.swift in Sources */,
 				74E1062B1F1E823000178BCF /* airLogging.swift in Sources */,
 				74E106231F1E7FD300178BCF /* UIView+air.swift in Sources */,
