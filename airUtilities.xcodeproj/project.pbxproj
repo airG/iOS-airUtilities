@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74364E011F1E93E800338AAC /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74364E001F1E93E800338AAC /* UIStackView+air.swift */; };
 		74E105D81F1E783E00178BCF /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74E105DD1F1E783E00178BCF /* airUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105DC1F1E783E00178BCF /* airUtilitiesTests.swift */; };
 		74E105DF1F1E783E00178BCF /* airUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E105D11F1E783E00178BCF /* airUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		74364E001F1E93E800338AAC /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+air.swift"; sourceTree = "<group>"; };
 		74E105CE1F1E783E00178BCF /* airUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = airUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E105D11F1E783E00178BCF /* airUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airUtilities.h; sourceTree = "<group>"; };
 		74E105D21F1E783E00178BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				74E106261F1E7FFF00178BCF /* Device+air.swift */,
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
 				74E1061E1F1E7FD300178BCF /* UIImage+air.swift */,
+				74364E001F1E93E800338AAC /* UIStackView+air.swift */,
 				74E1061F1F1E7FD300178BCF /* UITableView+air.swift */,
 				74E106201F1E7FD300178BCF /* UIView+air.swift */,
 				74E106101F1E7E0700178BCF /* UIViewController+air.swift */,
@@ -284,6 +287,7 @@
 				74E106211F1E7FD300178BCF /* UIImage+air.swift in Sources */,
 				74E106161F1E7E2500178BCF /* UIView+AutoLayoutHelpers.swift in Sources */,
 				74E1062B1F1E823000178BCF /* airLogging.swift in Sources */,
+				74364E011F1E93E800338AAC /* UIStackView+air.swift in Sources */,
 				74E106231F1E7FD300178BCF /* UIView+air.swift in Sources */,
 				74E105FB1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift in Sources */,
 				74E106071F1E7B9100178BCF /* Array+air.swift in Sources */,

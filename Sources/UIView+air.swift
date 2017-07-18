@@ -36,12 +36,3 @@ public extension UIView {
         }
     }
 }
-
-@available(iOS 9.0, *)
-public extension UIStackView {
-    public func removeAllArrangedSubviews() {
-        for view in self.arrangedSubviews {
-            self.removeArrangedSubview(view)
-        }
-    }
-}

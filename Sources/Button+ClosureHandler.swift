@@ -28,7 +28,8 @@ public extension UIButton {
 
     /// Closure based event handling for `UIButton`. `Handler` will be called when the button receives an event of type `event`.
     ///
-    /// - Parameters:    ///   - handler: Closure you want executed on event.
+    /// - Parameters:    
+    ///   - handler: Closure you want executed on event.
     ///   - event: Event that causes execution.
     public func add(handler: EmptyClosure?, for event: UIControlEvents) {
         handle(event, with: handler)
