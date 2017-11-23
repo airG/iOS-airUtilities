@@ -57,3 +57,9 @@ public extension UITableView {
         return dequeueReusableHeaderFooterView(withIdentifier: T.Identifier) as! T
     }
 }
+
+public extension UITableView {
+    func hasRow(for indexPath: IndexPath) -> Bool {
+        return numberOfSections >= indexPath.section && numberOfRows(inSection: indexPath.section) >= indexPath.row
+    }
+}
