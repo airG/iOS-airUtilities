@@ -10,12 +10,16 @@ import UIKit
 import ObjectiveC
 
 // MARK: - DynamicTypeResponsive
+/// Classes that conform to this protocol allow responding to dynamic text changes on iOS 9 and lower
 public protocol DynamicTypeResponsive {
     /// Sets if the view should redraw and update font size based on a set TextStyle, when the user changes their Dynamic Type setting.
     var respondsToDynamicTypeChanges: Bool { get set }
 }
 
 extension UILabel: DynamicTypeResponsive {
+    /// A boolean indicating if the text should live adjust size based on the user's dynamic text setting changing.
+    ///
+    /// A wrapper for `self.adjustsFontForContentSizeCategory` on iOS 10+, and custom notification for content size change on iOS 9 and lower.
     public var respondsToDynamicTypeChanges: Bool {
         set {
             if #available(iOS 10.0, *) {
@@ -42,6 +46,9 @@ extension UILabel: DynamicTypeResponsive {
 }
 
 extension UITextView: DynamicTypeResponsive {
+    /// A boolean indicating if the text should live adjust size based on the user's dynamic text setting changing.
+    ///
+    /// A wrapper for `self.adjustsFontForContentSizeCategory` on iOS 10+, and custom notification for content size change on iOS 9 and lower.
     public var respondsToDynamicTypeChanges: Bool {
         set {
             if #available(iOS 10.0, *) {
@@ -68,6 +75,9 @@ extension UITextView: DynamicTypeResponsive {
 }
 
 extension UITextField: DynamicTypeResponsive {
+    /// A boolean indicating if the text should live adjust size based on the user's dynamic text setting changing.
+    ///
+    /// A wrapper for `self.adjustsFontForContentSizeCategory` on iOS 10+, and custom notification for content size change on iOS 9 and lower.
     public var respondsToDynamicTypeChanges: Bool {
         set {
             if #available(iOS 10.0, *) {
@@ -94,6 +104,9 @@ extension UITextField: DynamicTypeResponsive {
 }
 
 extension UIButton: DynamicTypeResponsive {
+    /// A boolean indicating if the titleLabel.text should live adjust size based on the user's dynamic text setting changing.
+    ///
+    /// A wrapper for `self.adjustsFontForContentSizeCategory` on iOS 10+, and custom notification for content size change on iOS 9 and lower.
     public var respondsToDynamicTypeChanges: Bool {
         set {
             self.titleLabel?.respondsToDynamicTypeChanges = newValue
@@ -120,7 +133,7 @@ protocol DynamicTypeAdjusting: class {
 }
 
 extension DynamicTypeAdjusting {
-    func setContentSizeDidChangeHandler(_ handler: NotificationHandler?) {
+    internal func setContentSizeDidChangeHandler(_ handler: NotificationHandler?) {
         if let handler = handler {
             let observer = NotificationCenter.default.addObserver(forName: Notification.Name.UIContentSizeCategoryDidChange,
                                                                   object: nil,
@@ -132,7 +145,7 @@ extension DynamicTypeAdjusting {
         }
     }
 
-    var contentSizeNotificationObserver: NSObjectProtocol? {
+    internal var contentSizeNotificationObserver: NSObjectProtocol? {
         set {
             withUnsafePointer(to: &NotificationObserverKey) { (p) -> Void in
                 objc_setAssociatedObject(self, p, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -152,12 +165,14 @@ extension UITextView: DynamicTypeAdjusting { }
 
 // MARK: - UIFont Helpers
 extension UIFont {
+    /// Convenience, returns `self.fontDescriptor.textStyle`
     public var textStyle: UIFontTextStyle? {
         return self.fontDescriptor.textStyle
     }
 }
 
 extension UIFontDescriptor {
+    /// Tries to return the UIFontTextStyle based on NSCTFontUIUsageAttribute and hardcoded String names
     public var textStyle: UIFontTextStyle? {
         guard let fontAttribute = fontAttributes["NSCTFontUIUsageAttribute"] as? String else {
             return nil
@@ -188,10 +203,12 @@ extension UIFontDescriptor {
                 case "UICTFontTextStyleTitle3":
                     return .title3
                 default:
-                    fatalError("Style not handled!") // Will need to support new styles added in iOS 11
+                    assertionFailure("Style not handled!") // Will need to support new styles added in iOS 11
+                    return nil
                 }
             }
-            fatalError("Style not handled!") // Will need to support new styles added in iOS 11
+            assertionFailure("Style not handled!") // Will need to support new styles added in iOS 11
+            return nil
         }
     }
 }

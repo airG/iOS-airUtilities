@@ -8,9 +8,23 @@
 
 import Foundation
 
+/// Provides possible levels to print as, and set for filtering
 public enum LogLevel: Int {
-    case error=0, warning, info, debug, verbose
+    /// Error
+    case error=0
+    /// Warning
+    case warning
+    /// Info
+    case info
+    /// Debug
+    case debug
+    /// Verbose
+    case verbose
 
+    /// Checks to see if the provided level is higher than `self`
+    ///
+    /// - Parameter otherLevel:
+    /// - Returns:
     func isAtLeast(_ otherLevel: LogLevel) -> Bool {
         return self.rawValue <= otherLevel.rawValue
     }

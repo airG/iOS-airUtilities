@@ -9,17 +9,21 @@
 import UIKit
 
 public extension UIViewController {
+    
+    /// Gets the `UINib` named `self.Identifier`
     public static var Nib: UINib {
         let bundle = Bundle(for: self)
         return UINib(nibName: Identifier, bundle: bundle)
     }
 
+    /// The string representation of `self`
     public static var Identifier: String {
         return String(describing: self)
     }
 }
 
 public extension UIViewController {
+    /// If presented by navigation controller, pops self, otherwise dismisses self.
     public func dismissSelf() {
         view.endEditing(false)
 

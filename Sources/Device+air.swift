@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIDevice {
+    /// Check if we are currently running in a simulator based on the architecture
     public static let isSimulator: Bool = {
         var isSim = false
         #if arch(i386) || arch(x86_64)

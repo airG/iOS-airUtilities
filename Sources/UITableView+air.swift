@@ -59,6 +59,10 @@ public extension UITableView {
 }
 
 public extension UITableView {
+    /// Checks if the provided indexPath represents a row in the tableview
+    ///
+    /// - Parameter indexPath:
+    /// - Returns:
     func hasRow(for indexPath: IndexPath) -> Bool {
         return numberOfSections >= indexPath.section && numberOfRows(inSection: indexPath.section) >= indexPath.row
     }

@@ -8,10 +8,16 @@
 
 import UIKit
 
+/// Starts spinning the network indicator, dispatches to the main thread.
 public func startNetworkIndicator() {
-    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    DispatchQueue.main.async {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
 }
 
+/// Stops spinning the network indicator, dispatches to the main thread.
 public func stopNetworkIndicator() {
-    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    DispatchQueue.main.async {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
 }

@@ -8,11 +8,16 @@
 
 import Foundation
 
-public enum Result<T>: CustomStringConvertible, CustomDebugStringConvertible {
+/// A generic type of either .success(T), or .failure(U)
+public enum Result<T, U>: CustomStringConvertible, CustomDebugStringConvertible {
+    /// Success with associated value `T`
     case success(T)
-    case failure(Error)
+    /// Failure with associated value `U`
+    case failure(U)
 
     //MARK: CustomStringConvertible
+    
+    /// String description of the result
     public var description: String {
         switch self {
         case let .success(value):
@@ -23,28 +28,27 @@ public enum Result<T>: CustomStringConvertible, CustomDebugStringConvertible {
     }
 
     //MARK: CustomDebugStringConvertible
+    
+    /// String description of the result
     public var debugDescription: String {
         return description
     }
 }
 
 public extension Result {
-    /// Init with an optional value and Error. Useful to convert UIKit APIs that return a `(T?, Error?)` into a Result type.
+    /// Init with two optional values Useful to convert UIKit APIs that return a `(T?, Error?)` into a Result type.
     ///
     /// - Parameters:
     ///   - value: Optional success value
-    ///   - error: Optional Error
-    public init(value: T?, error: Error?) {
+    ///   - error: Optional failure value
+    public init?(value: T?, error: U?) {
         switch (value, error) {
         case (let v?, _):
             self = .success(v)
         case (nil, let e?):
             self = .failure(e)
         case (nil, nil):
-            let error = NSError(domain: "ResultErrorDomain", code: -1,
-                                userInfo: [NSLocalizedDescriptionKey:
-                                    "Invalid input: value and error were both nil."])
-            self = .failure(error)
+            return nil
         }
     }
 }

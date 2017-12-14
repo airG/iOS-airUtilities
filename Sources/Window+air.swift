@@ -9,6 +9,7 @@
 import UIKit
 
 public extension UIWindow {
+    /// Tries to find the topmost presented view controller
     public var topMostController: UIViewController {
         var top = self.rootViewController!
 
