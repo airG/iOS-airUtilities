@@ -1,6 +1,6 @@
 # airUtilities
 
-![Documentation](docs/badge.svg)
+[![Documentation](https://github.com/airG/iOS-airUtilities/blob/master/docs/badge.svg)](https://airg.github.io/iOS-airUtilities/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 A framework of common iOS functions and extensions written in Swift.
