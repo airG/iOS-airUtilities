@@ -1,15 +1,21 @@
-A framework of common functions and extensions in Swift.
- 
+# airUtilities
 
-**Installation**
+![](docs/badge.svg)
 
-Using Carthage, include this in your Cartfile:
+A framework of common iOS functions and extensions written in Swift.
 
-`git "git@gitlab.airg.com:airg-unit/airUtilities.git"`
+## How to use airUtilities
 
-Then run:
+Installation is best managed using Carthage. Add `github "airg/airUtilities"` to your cartfile and run `carthage install`, see [Carthage Installation Guide](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos).
 
-`carthage update --platform iOS --no-use-binaries --cache-builds --platform iOS` OR
 
-`carthage update airUtilities --platform iOS --no-use-binaries --cache-builds --platform iOS`
- 
+## Documentation
+
+Check out the [documentation](https://airg.github.io/ios-airUtilities/). All calls should also be documented in the generated Swift interface.
+
+
+## How it's made
+
+airUtilities is currently written in Swift 4 with Xcode 9.2.
+
+Documentation is generated using [Jazzy](https://github.com/realm/jazzy), a very useful tool for generating pretty docs.
