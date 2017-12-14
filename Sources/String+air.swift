@@ -8,9 +8,15 @@
 
 import Foundation
 
+public extension Optional where Wrapped == String {
+    public var isNilOrEmpty: Bool {
+        return self?.isEmpty ?? true
+    }
+}
+
 public extension String {
     public subscript (i: Int) -> Character {
-        return self[self.characters.index(self.startIndex, offsetBy: i)]
+        return self[self.index(self.startIndex, offsetBy: i)]
     }
 }
 
