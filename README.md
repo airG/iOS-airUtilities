@@ -13,7 +13,7 @@ Installation is best managed using Carthage. Add `github "airg/iOS-airUtilities"
 
 ## Documentation
 
-Check out the [documentation](https://airg.github.io/ios-airUtilities/). All calls should also be documented in the generated Swift interface.
+Check out the [documentation](https://airg.github.io/iOS-airUtilities/). All calls should also be documented in the generated Swift interface.
 
 
 ## How it's made
