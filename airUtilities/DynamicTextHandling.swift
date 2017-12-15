@@ -174,7 +174,8 @@ extension UIFont {
 extension UIFontDescriptor {
     /// Tries to return the UIFontTextStyle based on NSCTFontUIUsageAttribute and hardcoded String names
     public var textStyle: UIFontTextStyle? {
-        guard let fontAttribute = fontAttributes["NSCTFontUIUsageAttribute"] as? String else {
+
+        guard let fontAttribute = fontAttributes[UIFontDescriptor.AttributeName("NSCTFontUIUsageAttribute")] as? String else {
             return nil
         }
 
