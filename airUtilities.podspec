@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "airUtilities"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "A collection of iOS utility functions and extensions."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "airUtilities", "airUtilities/**/*.{h,m}"
+  s.source_files  = "airUtilities", "airUtilities/**/*.{h,m}", "Sources"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
