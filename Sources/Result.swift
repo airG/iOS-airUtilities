@@ -52,3 +52,6 @@ public extension Result {
         }
     }
 }
+
+/// The Result type of <T, Swift.Error> is common enough to deserve this typealias
+public typealias ResultWithError<T> = Result<T, Swift.Error>

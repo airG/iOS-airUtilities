@@ -24,7 +24,7 @@ public extension UIViewController {
 
 public extension UIViewController {
     /// If presented by navigation controller, pops self, otherwise dismisses self.
-    public func dismissSelf() {
+    @objc public func dismissSelf() {
         view.endEditing(false)
 
         if let _ = presentingViewController, (navigationController == nil || navigationController?.viewControllers.index(of: self) == 0) {
