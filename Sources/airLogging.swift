@@ -7,20 +7,21 @@
 //
 
 import Foundation
+import os.log
 
 /// Provides possible levels to print as, and set for filtering
-public enum LogLevel: Int {
-    /// Error
-    case error=0
+public enum LogLevel: Int, CustomStringConvertible {
+    /// Fault
+    case fault=0
     /// Warning
-    case warning
+    case error
+    /// Default
+    case `default`
     /// Info
     case info
     /// Debug
     case debug
-    /// Verbose
-    case verbose
-
+    
     /// Checks to see if the provided level is higher than `self`
     ///
     /// - Parameter otherLevel:
@@ -28,10 +29,30 @@ public enum LogLevel: Int {
     func isAtLeast(_ otherLevel: LogLevel) -> Bool {
         return self.rawValue <= otherLevel.rawValue
     }
+    
+    @available(iOS 10.0, *)
+    /// Self converted to `OSLogType`
+    var osLogType: OSLogType {
+        switch self {
+        default:
+            return .error;
+        }
+    }
+    
+    /// String value of the` LogLevel`
+    public var description: String {
+        switch self {
+        case .fault: return "fault"
+        case .error: return "error"
+        case .default: return "default"
+        case .info: return "info"
+        case .debug: return "debug"
+        }
+    }
 }
 
 /// Logging will ignore any messages below this level. Set this anywhere to change the default.
-public var minimumLogLevel: LogLevel = .info
+public var minimumLogLevel: LogLevel = .default
 
 /// When passing an Error, logging assumes you want to log it as .error. Set this anywhere to change the default.
 public var minimumErrorLogLevel: LogLevel = .error
@@ -41,15 +62,17 @@ public var minimumErrorLogLevel: LogLevel = .error
 /// - Parameters:
 ///   - error: Error type for logging. Doesn't log if error == nil
 ///   - level: Log level of the message, subject to `minimumErrorLogLevel`
+///   - category: When logging to the system console you can group similar messages by category to categorize and filter related log messages
 ///   - file: Not needed, gets these automatically
+///   - function: Not needed, gets these automatically
 ///   - line: Not needed, gets these automatically
-public func Log(_ error: Error?, as level: LogLevel = minimumErrorLogLevel, file: String = #file, function: String = #function, line: Int = #line) {
+public func Log(_ error: Error?, as level: LogLevel = minimumErrorLogLevel, category: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
     guard level.isAtLeast(minimumErrorLogLevel) else {
         return
     }
-
+    
     if let error = error {
-        Log("\(error)", as: level, file: file, function: function, line: line)
+        log("\(error)", as: level, category: category, file: file, function: function, line: line)
     }
 }
 
@@ -58,28 +81,36 @@ public func Log(_ error: Error?, as level: LogLevel = minimumErrorLogLevel, file
 /// - Parameters:
 ///   - message: String to log, subject to `minimumLogLevel`.
 ///   - level: Log level of the message, subject to `minimumLogLevel`
+///   - category: When logging to the system console you can group similar messages by category to categorize and filter related log messages
 ///   - file: Not needed, gets these automatically
+///   - function: Not needed, gets these automatically
 ///   - line: Not needed, gets these automatically
-public func Log(_ message: String?, as level: LogLevel = minimumLogLevel, file: String = #file, function: String = #function, line: Int = #line) {
+public func Log(_ message: String?, as level: LogLevel = minimumLogLevel, category: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
     guard level.isAtLeast(minimumLogLevel) else {
         return
     }
-
+    
     if let message = message {
-        Log(message, as: level, file: file, function: function, line: line)
+        log(message, as: level, category: category, file: file, function: function, line: line)
     }
 }
 
-fileprivate func Log(_ message: String, as level: LogLevel, file: String = #file, function: String = #function, line: Int = #line) {
+fileprivate func log(_ message: String, as level: LogLevel, category: String? = nil, file: String = #file, function: String = #function, line: Int = #line) {
     let singleFile: String
-    if let f = file.components(separatedBy: "/").last {
-        singleFile = f.replacingOccurrences(of: ".swift", with: "")
+    if let f = file.components(separatedBy: "/").last?.components(separatedBy: ".").first {
+        singleFile = f
     } else {
         singleFile = ""
     }
-
-    let mes = "\(dateFormatter.string(from: NSDate() as Date)) <\(level)> \(singleFile):\(line) \(function) - \(message)"
-    print(mes)
+    
+    if #available(iOS 10.0, *), !UIDevice.isSimulator {
+        let osMes: StaticString = "%@:%d %@ - %@"
+        let log = OSLog(subsystem: "\( Bundle.main.bundleIdentifier ?? "" )", category: category ?? "")
+        os_log(osMes, log: log, type: level.osLogType, singleFile, line, function, message)
+    } else {
+        let mes = "\(dateFormatter.string(from: NSDate() as Date)) <\(level)> \(singleFile):\(line) \(function) - \(message)"
+        print(mes)
+    }
 }
 
 fileprivate let dateFormatter: DateFormatter = {

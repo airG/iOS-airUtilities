@@ -8,12 +8,14 @@
 
 import Foundation
 
-/// Update left dictionary with keys, values from right
-///
-/// - parameter left:  [K:V]
-/// - parameter right: [K:V]
-public func += <K, V> (left: inout [K:V], right: [K:V]) {
-    for (k, v) in right {
-        left.updateValue(v, forKey: k)
+public extension Dictionary {
+    /// Update left dictionary with keys, values from right
+    ///
+    /// - parameter left:  [Key: Value]
+    /// - parameter right: [Key: Value]
+    public static func += (left: inout [Key: Value], right: [Key: Value]) {
+        for (k, v) in right {
+            left[k] = v
+        }
     }
 }
