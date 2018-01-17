@@ -12,6 +12,7 @@
 		7448C7ED200FBDEC00FBDB55 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */; };
 		7448C7EF200FBE5B00FBDB55 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EE200FBE5B00FBDB55 /* URLTests.swift */; };
 		7448C7F1200FC53000FBDB55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7448C7F0200FC52F00FBDB55 /* .travis.yml */; };
+		7448C7F3200FE09800FBDB55 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7F2200FE09800FBDB55 /* UIImageTests.swift */; };
 		749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */; };
 		749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */; };
 		749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */; };
@@ -25,7 +26,6 @@
 		74D08413200E72B400F5798F /* Bool+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D08412200E72B400F5798F /* Bool+air.swift */; };
 		74D76D762009357600180B71 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D76D752009357600180B71 /* ArrayTests.swift */; };
 		74E105D81F1E783E00178BCF /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
-		74E105DD1F1E783E00178BCF /* airUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105DC1F1E783E00178BCF /* airUtilitiesTests.swift */; };
 		74E105DF1F1E783E00178BCF /* airUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E105D11F1E783E00178BCF /* airUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E105FB1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */; };
 		74E105FD1F1E7B7600178BCF /* String+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105FC1F1E7B7600178BCF /* String+air.swift */; };
@@ -84,6 +84,7 @@
 		7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoolTests.swift; path = Tests/BoolTests.swift; sourceTree = "<group>"; };
 		7448C7EE200FBE5B00FBDB55 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		7448C7F0200FC52F00FBDB55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		7448C7F2200FE09800FBDB55 /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageTests.swift; path = Tests/UIImageTests.swift; sourceTree = "<group>"; };
 		749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTextHandling.swift; path = Sources/DynamicTextHandling.swift; sourceTree = SOURCE_ROOT; };
 		749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+air.swift"; path = "Sources/UIGestureRecognizer+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+air.swift"; path = "Sources/UIStackView+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -100,7 +101,6 @@
 		74E105D11F1E783E00178BCF /* airUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airUtilities.h; sourceTree = "<group>"; };
 		74E105D21F1E783E00178BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E105D71F1E783E00178BCF /* airUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74E105DC1F1E783E00178BCF /* airUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airUtilitiesTests.swift; sourceTree = "<group>"; };
 		74E105DE1F1E783E00178BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+ExpressibleByStringLiteral.swift"; path = "Sources/URL+ExpressibleByStringLiteral.swift"; sourceTree = SOURCE_ROOT; };
 		74E105FC1F1E7B7600178BCF /* String+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+air.swift"; path = "Sources/String+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -198,7 +198,6 @@
 		74E105DB1F1E783E00178BCF /* airUtilitiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				74E105DC1F1E783E00178BCF /* airUtilitiesTests.swift */,
 				74E105DE1F1E783E00178BCF /* Info.plist */,
 			);
 			path = airUtilitiesTests;
@@ -233,6 +232,7 @@
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
 				749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */,
 				74E1061E1F1E7FD300178BCF /* UIImage+air.swift */,
+				7448C7F2200FE09800FBDB55 /* UIImageTests.swift */,
 				749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */,
 				74E1061F1F1E7FD300178BCF /* UITableView+air.swift */,
 				74E106201F1E7FD300178BCF /* UIView+air.swift */,
@@ -433,12 +433,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E105DD1F1E783E00178BCF /* airUtilitiesTests.swift in Sources */,
 				7448C7EF200FBE5B00FBDB55 /* URLTests.swift in Sources */,
 				7448C7E9200ED43E00FBDB55 /* StringTests.swift in Sources */,
 				74D76D762009357600180B71 /* ArrayTests.swift in Sources */,
 				7448C7EB200ED8B800FBDB55 /* IndexPathTests.swift in Sources */,
 				7448C7ED200FBDEC00FBDB55 /* BoolTests.swift in Sources */,
+				7448C7F3200FE09800FBDB55 /* UIImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

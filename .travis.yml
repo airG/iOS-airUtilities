@@ -3,3 +3,6 @@ xcode_workspace: airUtilities.xcworkspace
 xcode_scheme: airUtilities
 xcode_sdk: iphonesimulator11.2
 osx_image: xcode9.2
+
+script:
+- xcodebuild clean test -workspace airUtilities.xcworkspace -scheme airUtilities -destination "platform=iOS Simulator,name=iPhone 7,OS=11.2"

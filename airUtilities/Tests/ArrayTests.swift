@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import airUtilities
 
 class ArrayTests: XCTestCase {
     
