@@ -2,6 +2,7 @@
 
 [![Documentation](https://raw.githubusercontent.com/airG/iOS-airUtilities/master/docs/badge.svg?sanitize=true)](https://airg.github.io/iOS-airUtilities/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/airG/iOS-airUtilities.svg?branch=master)](https://travis-ci.org/airG/iOS-airUtilities)
 
 A framework of common iOS functions and extensions written in Swift.
 
