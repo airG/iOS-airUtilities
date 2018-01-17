@@ -11,6 +11,7 @@
 		7448C7EB200ED8B800FBDB55 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EA200ED8B800FBDB55 /* IndexPathTests.swift */; };
 		7448C7ED200FBDEC00FBDB55 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */; };
 		7448C7EF200FBE5B00FBDB55 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EE200FBE5B00FBDB55 /* URLTests.swift */; };
+		7448C7F1200FC53000FBDB55 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7448C7F0200FC52F00FBDB55 /* .travis.yml */; };
 		749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */; };
 		749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */; };
 		749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */; };
@@ -82,6 +83,7 @@
 		7448C7EA200ED8B800FBDB55 /* IndexPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndexPathTests.swift; path = Tests/IndexPathTests.swift; sourceTree = "<group>"; };
 		7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoolTests.swift; path = Tests/BoolTests.swift; sourceTree = "<group>"; };
 		7448C7EE200FBE5B00FBDB55 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		7448C7F0200FC52F00FBDB55 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 		749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTextHandling.swift; path = Sources/DynamicTextHandling.swift; sourceTree = SOURCE_ROOT; };
 		749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+air.swift"; path = "Sources/UIGestureRecognizer+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+air.swift"; path = "Sources/UIStackView+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -185,6 +187,7 @@
 			children = (
 				74E105D11F1E783E00178BCF /* airUtilities.h */,
 				74E105D21F1E783E00178BCF /* Info.plist */,
+				7448C7F0200FC52F00FBDB55 /* .travis.yml */,
 				74E105EF1F1E78E300178BCF /* UIKit */,
 				74E105EA1F1E78A400178BCF /* Swift */,
 				74E1062A1F1E823000178BCF /* airLogging.swift */,
@@ -374,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7448C7F1200FC53000FBDB55 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
