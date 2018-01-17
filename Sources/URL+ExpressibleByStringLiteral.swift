@@ -10,7 +10,7 @@ import Foundation
 
 extension URL: ExpressibleByStringLiteral {
     public typealias StringLiteralType = StaticString
-
+    
     public init(stringLiteral value: URL.StringLiteralType) {
         guard let url = URL(string: "\(value)") else {
             fatalError("Couldn't create a URL from that string")

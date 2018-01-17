@@ -11,7 +11,7 @@ import XCTest
 class BoolTests: XCTestCase {
     
     func testToggle() {
-        let boolean = false
+        var boolean = false
         XCTAssertFalse(boolean)
         boolean.toggle()
         XCTAssertTrue(boolean)

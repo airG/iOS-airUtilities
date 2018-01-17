@@ -1,3 +1,4 @@
 language: swift
 xcode_workspace: airUtilities.xcworkspace
 xcode_scheme: airUtilities
+xcode_sdk: iphonesimulator11.2
