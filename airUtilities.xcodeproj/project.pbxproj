@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7448C7E9200ED43E00FBDB55 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7E8200ED43E00FBDB55 /* StringTests.swift */; };
+		7448C7EB200ED8B800FBDB55 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EA200ED8B800FBDB55 /* IndexPathTests.swift */; };
+		7448C7ED200FBDEC00FBDB55 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */; };
+		7448C7EF200FBE5B00FBDB55 /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448C7EE200FBE5B00FBDB55 /* URLTests.swift */; };
 		749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */; };
 		749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */; };
 		749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */; };
@@ -17,6 +21,7 @@
 		74A7720A2007EC360039EEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A772082007EC360039EEC0 /* LaunchScreen.storyboard */; };
 		74A7720F2007EC820039EEC0 /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74A772102007EC820039EEC0 /* airUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74D08413200E72B400F5798F /* Bool+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D08412200E72B400F5798F /* Bool+air.swift */; };
 		74D76D762009357600180B71 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D76D752009357600180B71 /* ArrayTests.swift */; };
 		74E105D81F1E783E00178BCF /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74E105DD1F1E783E00178BCF /* airUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105DC1F1E783E00178BCF /* airUtilitiesTests.swift */; };
@@ -73,6 +78,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7448C7E8200ED43E00FBDB55 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringTests.swift; path = Tests/StringTests.swift; sourceTree = "<group>"; };
+		7448C7EA200ED8B800FBDB55 /* IndexPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndexPathTests.swift; path = Tests/IndexPathTests.swift; sourceTree = "<group>"; };
+		7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoolTests.swift; path = Tests/BoolTests.swift; sourceTree = "<group>"; };
+		7448C7EE200FBE5B00FBDB55 /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
 		749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTextHandling.swift; path = Sources/DynamicTextHandling.swift; sourceTree = SOURCE_ROOT; };
 		749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+air.swift"; path = "Sources/UIGestureRecognizer+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+air.swift"; path = "Sources/UIStackView+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -83,6 +92,7 @@
 		74A772062007EC360039EEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A772092007EC360039EEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A7720B2007EC360039EEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D08412200E72B400F5798F /* Bool+air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+air.swift"; sourceTree = "<group>"; };
 		74D76D752009357600180B71 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ArrayTests.swift; path = Tests/ArrayTests.swift; sourceTree = "<group>"; };
 		74E105CE1F1E783E00178BCF /* airUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = airUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E105D11F1E783E00178BCF /* airUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airUtilities.h; sourceTree = "<group>"; };
@@ -196,11 +206,16 @@
 			children = (
 				74E106061F1E7B9100178BCF /* Array+air.swift */,
 				74D76D752009357600180B71 /* ArrayTests.swift */,
+				74D08412200E72B400F5798F /* Bool+air.swift */,
+				7448C7EC200FBDEC00FBDB55 /* BoolTests.swift */,
 				74E106021F1E7B8300178BCF /* Dictionary+air.swift */,
 				74E106241F1E7FEB00178BCF /* IndexPath+air.swift */,
+				7448C7EA200ED8B800FBDB55 /* IndexPathTests.swift */,
 				74E105FE1F1E7B7B00178BCF /* Result.swift */,
 				74E105FC1F1E7B7600178BCF /* String+air.swift */,
+				7448C7E8200ED43E00FBDB55 /* StringTests.swift */,
 				74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */,
+				7448C7EE200FBE5B00FBDB55 /* URLTests.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
@@ -401,6 +416,7 @@
 				74E106031F1E7B8300178BCF /* Dictionary+air.swift in Sources */,
 				74E106211F1E7FD300178BCF /* UIImage+air.swift in Sources */,
 				74E106161F1E7E2500178BCF /* UIView+AutoLayoutHelpers.swift in Sources */,
+				74D08413200E72B400F5798F /* Bool+air.swift in Sources */,
 				74E1062B1F1E823000178BCF /* airLogging.swift in Sources */,
 				74E106231F1E7FD300178BCF /* UIView+air.swift in Sources */,
 				749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */,
@@ -414,7 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E105DD1F1E783E00178BCF /* airUtilitiesTests.swift in Sources */,
+				7448C7EF200FBE5B00FBDB55 /* URLTests.swift in Sources */,
+				7448C7E9200ED43E00FBDB55 /* StringTests.swift in Sources */,
 				74D76D762009357600180B71 /* ArrayTests.swift in Sources */,
+				7448C7EB200ED8B800FBDB55 /* IndexPathTests.swift in Sources */,
+				7448C7ED200FBDEC00FBDB55 /* BoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

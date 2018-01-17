@@ -24,11 +24,11 @@ public extension IndexPath {
     }
 }
 
-extension IndexPath {
+public extension IndexPath {
     /// Modifies an `IndexPath`'s row by adding the provided number
     ///
     /// - Parameter number: Can be negative if you want to find a previous `IndexPath`
-    mutating func modifyingRow(by number: Int) {
+    public mutating func modifyingRow(by number: Int) {
         self.modifyingBy(row: number, section: 0)
     }
     
@@ -37,7 +37,7 @@ extension IndexPath {
     /// - Parameters:
     ///   - row: Int to add to `self.row`
     ///   - section: Int to add to `section`
-    mutating func modifyingBy(row: Int = 0, section: Int = 0) {
+    public mutating func modifyingBy(row: Int = 0, section: Int = 0) {
         self.row += row
         self.section += section
     }

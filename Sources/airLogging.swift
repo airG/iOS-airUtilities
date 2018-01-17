@@ -30,8 +30,8 @@ public enum LogLevel: Int, CustomStringConvertible {
         return self.rawValue <= otherLevel.rawValue
     }
     
-    @available(iOS 10.0, *)
     /// Self converted to `OSLogType`
+    @available(iOS 10.0, *)
     var osLogType: OSLogType {
         switch self {
         default:
