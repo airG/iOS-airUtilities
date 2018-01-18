@@ -1,14 +1,14 @@
 //
-//  UITextView+air.swift
+//  UITextField+air.swift
 //  airUtilities
 //
-//  Created by Steven Thompson on 2018-01-17.
-//  Copyright © 2018 airg. All rights reserved.
+//  Created by Steven Thompson on 2017-07-18.
+//  Copyright © 2017 airg. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-public extension UITextView {
+public extension UITextField {
     /// Returns value of `self.text.isEmpty`
     public var isTextEmpty: Bool {
         guard let text = self.text else {

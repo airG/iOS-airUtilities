@@ -77,4 +77,23 @@ class ArrayTests: XCTestCase {
         let test4 = testArray.at(safe: index)
         XCTAssertEqual(test4, 2)
     }
+    
+    func testSafeSubscriptOutOfBounds() {
+        let testArray = [1, 2, 3, 4, 5]
+        
+        let uIndex: UInt = 10
+        let test1 = testArray[safe: uIndex]
+        XCTAssertNil(test1)
+        
+        let test2 = testArray.at(safe: uIndex)
+        XCTAssertNil(test2)
+
+        let index: Int = 10
+        let test3 = testArray[safe: index]
+        XCTAssertNil(test3)
+
+        let test4 = testArray.at(safe: index)
+        XCTAssertNil(test4)
+    }
+
 }

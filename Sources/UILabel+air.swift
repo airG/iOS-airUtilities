@@ -1,5 +1,5 @@
 //
-//  UITextView+air.swift
+//  UILabel+air.swift
 //  airUtilities
 //
 //  Created by Steven Thompson on 2018-01-17.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-public extension UITextView {
+public extension UILabel {
     /// Returns value of `self.text.isEmpty`
     public var isTextEmpty: Bool {
         guard let text = self.text else {
             return true
         }
-        
+
         return text.isEmpty
     }
 }
