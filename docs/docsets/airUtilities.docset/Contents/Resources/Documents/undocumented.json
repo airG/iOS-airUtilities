@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/stevent/airG/GitHub repos/airUtilities/Sources/Dictionary+air.swift",
-      "line": 22,
-      "symbol": "Dictionary.+=(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stevent/airG/GitHub repos/airUtilities/Sources/Dictionary+air.swift",
-      "line": 26,
-      "symbol": "Dictionary.test()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/stevent/airG/GitHub repos/airUtilities"
 }

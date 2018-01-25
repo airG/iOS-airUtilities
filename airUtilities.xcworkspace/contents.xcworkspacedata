@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:airUtilitiesPlayground.playground">
+   </FileRef>
+   <FileRef
       location = "container:airUtilities.xcodeproj">
    </FileRef>
 </Workspace>

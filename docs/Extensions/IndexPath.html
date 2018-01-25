@@ -56,6 +56,9 @@
                 <a href="../Extensions/Array.html">Array</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/Dictionary.html">Dictionary</a>
               </li>
               <li class="nav-group-task">
@@ -75,6 +78,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIFont.html">UIFont</a>
@@ -136,6 +142,14 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Protocols/DynamicTypeResponsive.html">DynamicTypeResponsive</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:12airUtilities15ResultWithErrora">ResultWithError</a>
               </li>
             </ul>
           </li>
@@ -220,10 +234,118 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation9IndexPathV12airUtilitiesE12modifyingRowySi2by_tF"></a>
+                    <a name="//apple_ref/swift/Method/modifyingRow(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation9IndexPathV12airUtilitiesE12modifyingRowySi2by_tF">modifyingRow(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Modifies an <code>IndexPath</code>&lsquo;s row by adding the provided number</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">modifyingRow</span><span class="p">(</span><span class="n">by</span> <span class="nv">number</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>number</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Can be negative if you want to find a previous <code>IndexPath</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation9IndexPathV12airUtilitiesE11modifyingByySi3row_Si7sectiontF"></a>
+                    <a name="//apple_ref/swift/Method/modifyingBy(row:section:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation9IndexPathV12airUtilitiesE11modifyingByySi3row_Si7sectiontF">modifyingBy(row:section:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Modifies an <code>IndexPath</code> with the provided row and section</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">modifyingBy</span><span class="p">(</span><span class="nv">row</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>row</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Int to add to <code>self.row</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Int to add to <code>section</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/airG/iOS-airUtilities" target="_blank" rel="external">Steven Thompson</a>. All rights reserved. (Last updated: 2018-01-12)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/airG/iOS-airUtilities" target="_blank" rel="external">Steven Thompson</a>. All rights reserved. (Last updated: 2018-01-22)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

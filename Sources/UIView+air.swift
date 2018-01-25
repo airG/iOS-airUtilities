@@ -34,7 +34,7 @@ public extension UIView {
         let roundedPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         maskLayer.path = roundedPath.cgPath
         layer.mask = maskLayer
-
+        
         if let borderColor = borderColor {
             let borderLayer = CAShapeLayer()
             borderLayer.path = roundedPath.cgPath
@@ -60,22 +60,22 @@ public extension UIView {
     /// - parameter width:
     /// - parameter height:
     public func constrainSize(width: CGFloat, height: CGFloat) {
-        addConstraint(NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width))
-        addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
+        constrainWidth(to: width)
+        constrainHeight(to: height)
     }
     
     /// Constrain height of self.
     ///
     /// - parameter height:
     public func constrainHeight(to height: CGFloat) {
-        addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
+        self.heightAnchor.constraint(equalToConstant: height).isActive = true
     }
     
     /// Constrain width of self.
     ///
     /// - parameter width:
     public func constrainWidth(to width: CGFloat) {
-        addConstraint(NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width))
+        self.widthAnchor.constraint(equalToConstant: width).isActive = true
     }
     
     /// Align centerX and centerY of `view` to `self`.
@@ -84,5 +84,7 @@ public extension UIView {
     public func center(on view: UIView) {
         addConstraint(NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1.0, constant: 0.0))
         addConstraint(NSLayoutConstraint(item: self, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1.0, constant: 0.0))
+        
+        
     }
 }

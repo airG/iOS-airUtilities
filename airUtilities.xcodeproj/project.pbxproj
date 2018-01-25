@@ -33,7 +33,10 @@
 		74A7720A2007EC360039EEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A772082007EC360039EEC0 /* LaunchScreen.storyboard */; };
 		74A7720F2007EC820039EEC0 /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74A772102007EC820039EEC0 /* airUtilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74CED06E201656C900104915 /* UIEdgeInsets+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CED06D201656C900104915 /* UIEdgeInsets+air.swift */; };
+		74CED070201656F000104915 /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CED06F201656F000104915 /* UIEdgeInsetsTests.swift */; };
 		74D76D762009357600180B71 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D76D752009357600180B71 /* ArrayTests.swift */; };
+		74DB61C4201663AA00533DED /* PropertyInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB61C3201663AA00533DED /* PropertyInitializers.swift */; };
 		74E105D81F1E783E00178BCF /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74E105DF1F1E783E00178BCF /* airUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E105D11F1E783E00178BCF /* airUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E105FB1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */; };
@@ -113,7 +116,10 @@
 		74A772062007EC360039EEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A772092007EC360039EEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A7720B2007EC360039EEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CED06D201656C900104915 /* UIEdgeInsets+air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+air.swift"; path = "Sources/UIEdgeInsets+air.swift"; sourceTree = SOURCE_ROOT; };
+		74CED06F201656F000104915 /* UIEdgeInsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsTests.swift; sourceTree = "<group>"; };
 		74D76D752009357600180B71 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		74DB61C3201663AA00533DED /* PropertyInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PropertyInitializers.swift; path = Sources/PropertyInitializers.swift; sourceTree = SOURCE_ROOT; };
 		74E105CE1F1E783E00178BCF /* airUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = airUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E105D11F1E783E00178BCF /* airUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airUtilities.h; sourceTree = "<group>"; };
 		74E105D21F1E783E00178BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 		745F05F020102442005CAC0B /* UIKit Tests */ = {
 			isa = PBXGroup;
 			children = (
+				74CED06F201656F000104915 /* UIEdgeInsetsTests.swift */,
 				7448C7F2200FE09800FBDB55 /* UIImageTests.swift */,
 				7448C7FA2010216200FBDB55 /* UILabelTests.swift */,
 				7448C7F42010182D00FBDB55 /* UIStackViewTests.swift */,
@@ -270,6 +277,7 @@
 				74E106261F1E7FFF00178BCF /* Device+air.swift */,
 				749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */,
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
+				74CED06D201656C900104915 /* UIEdgeInsets+air.swift */,
 				749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */,
 				74E1061E1F1E7FD300178BCF /* UIImage+air.swift */,
 				745F05EE20102433005CAC0B /* UILabel+air.swift */,
@@ -280,6 +288,7 @@
 				74E106201F1E7FD300178BCF /* UIView+air.swift */,
 				74E106101F1E7E0700178BCF /* UIViewController+air.swift */,
 				74E106141F1E7E2500178BCF /* Window+air.swift */,
+				74DB61C3201663AA00533DED /* PropertyInitializers.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -456,8 +465,10 @@
 				74E105FD1F1E7B7600178BCF /* String+air.swift in Sources */,
 				749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */,
 				74E106291F1E803F00178BCF /* CollectionView+air.swift in Sources */,
+				74CED06E201656C900104915 /* UIEdgeInsets+air.swift in Sources */,
 				7448C7FD201021AB00FBDB55 /* UITextView+air.swift in Sources */,
 				749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */,
+				74DB61C4201663AA00533DED /* PropertyInitializers.swift in Sources */,
 				74E106151F1E7E2500178BCF /* UITextField+air.swift in Sources */,
 				74E106031F1E7B8300178BCF /* Dictionary+air.swift in Sources */,
 				74E106211F1E7FD300178BCF /* UIImage+air.swift in Sources */,
@@ -476,6 +487,7 @@
 			files = (
 				745F05E62010224D005CAC0B /* UITextViewTests.swift in Sources */,
 				745F05EB2010241D005CAC0B /* URLTests.swift in Sources */,
+				74CED070201656F000104915 /* UIEdgeInsetsTests.swift in Sources */,
 				7448C7FB2010216200FBDB55 /* UILabelTests.swift in Sources */,
 				7448C7F720101AC800FBDB55 /* UITextFieldTests.swift in Sources */,
 				7448C7F52010182D00FBDB55 /* UIStackViewTests.swift in Sources */,
@@ -692,7 +704,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = airUtilities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.airg.airUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -715,7 +727,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = airUtilities/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.airg.airUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
