@@ -107,11 +107,10 @@ fileprivate func log(_ message: String, as level: LogLevel, category: String? = 
         let osMes: StaticString = "%@:%d %@ - %@"
         let log = OSLog(subsystem: "\( Bundle.main.bundleIdentifier ?? "" )", category: category ?? "")
         os_log(osMes, log: log, type: level.osLogType, singleFile, line, function, message)
+    } else {
+        let mes = "\(dateFormatter.string(from: NSDate() as Date)) <\(level)> \(singleFile):\(line) \(function) - \(message)"
+        NSLog(mes)
     }
-    
-    // We'll print it anyway, for Xcode debugging
-    let mes = "\(dateFormatter.string(from: NSDate() as Date)) <\(level)> \(singleFile):\(line) \(function) - \(message)"
-    print(mes)
 }
 
 fileprivate let dateFormatter: DateFormatter = {
