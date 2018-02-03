@@ -66,4 +66,12 @@ public extension UITableView {
     func hasRow(for indexPath: IndexPath) -> Bool {
         return numberOfSections >= indexPath.section && numberOfRows(inSection: indexPath.section) >= indexPath.row
     }
+    
+    /// Checks if the provided section exists in the tableview
+    ///
+    /// - Parameter section:
+    /// - Returns:
+    func has(section: Int) -> Bool {
+        return numberOfSections > section
+    }
 }

@@ -1,8 +1,15 @@
-//: Playground - noun: a place where people can play
+//
+//  Int+air.swift
+//  airUtilities
+//
+//  Created by Steven Thompson on 2018-02-02.
+//  Copyright © 2018 airg. All rights reserved.
+//
 
-import UIKit
+import Foundation
 
 extension Int {
+    /// Turns a number like 1000000 into 1,000k
     var inThousands: String {
         let form = NumberFormatter()
         form.roundingIncrement = 1000

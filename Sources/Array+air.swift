@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - Unique contents
 public extension Array where Element: Equatable {
     /// Append iff `!self.contains(newElement)`
     ///
@@ -57,6 +58,7 @@ public extension Array where Element: Equatable {
     }
 }
 
+// MARK: - Safe Subscripting
 // https://gist.github.com/yamaya/972338b68020e967d96e
 public extension Array {
     /// Safely subscripts an array, returning nil if index is out of bounds
@@ -84,5 +86,20 @@ public extension Array {
     /// - Parameter index:
     func at(safe index: Int) -> Element? {
         return Int(index) < count ? self[Int(index)] : nil
+    }
+}
+
+// MARK: - Index Manipulation
+extension Array {
+    /// Returns the next valid index, returning to 0 if the end is reached
+    ///
+    /// - Parameter index: Index to iterate
+    /// - Returns: Next index
+    func loopedNextIndex(from index: Int) -> Int {
+        if index >= count - 1 {
+            return 0
+        } else {
+            return index + 1
+        }
     }
 }

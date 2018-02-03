@@ -23,6 +23,7 @@
 		745F05EF20102433005CAC0B /* UILabel+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F05EE20102433005CAC0B /* UILabel+air.swift */; };
 		745F05F3201025BD005CAC0B /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F05F2201025BD005CAC0B /* ResultTests.swift */; };
 		745F05F520112DB8005CAC0B /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F05F420112DB8005CAC0B /* DictionaryTests.swift */; };
+		7464A83820238FBD00ECCDF1 /* UIColor+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464A83720238FBD00ECCDF1 /* UIColor+air.swift */; };
 		749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */; };
 		749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */; };
 		749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */; };
@@ -56,6 +57,12 @@
 		74E106271F1E7FFF00178BCF /* Device+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E106261F1E7FFF00178BCF /* Device+air.swift */; };
 		74E106291F1E803F00178BCF /* CollectionView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E106281F1E803F00178BCF /* CollectionView+air.swift */; };
 		74E1062B1F1E823000178BCF /* airLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1062A1F1E823000178BCF /* airLogging.swift */; };
+		74E3331120252AFE0069C86B /* SizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3331020252AFE0069C86B /* SizingCollectionView.swift */; };
+		74E3331420252B090069C86B /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3331220252B090069C86B /* SwitchTableViewCell.swift */; };
+		74E3331520252B090069C86B /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74E3331320252B090069C86B /* SwitchTableViewCell.xib */; };
+		74E3331720252B100069C86B /* TappableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3331620252B100069C86B /* TappableTextView.swift */; };
+		74E3331920252B190069C86B /* Int+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3331820252B190069C86B /* Int+air.swift */; };
+		74E3331B20252B1E0069C86B /* CoreData+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3331A20252B1D0069C86B /* CoreData+air.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +113,7 @@
 		745F05EE20102433005CAC0B /* UILabel+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+air.swift"; path = "Sources/UILabel+air.swift"; sourceTree = SOURCE_ROOT; };
 		745F05F2201025BD005CAC0B /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		745F05F420112DB8005CAC0B /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
+		7464A83720238FBD00ECCDF1 /* UIColor+air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+air.swift"; path = "Sources/UIColor+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTextHandling.swift; path = Sources/DynamicTextHandling.swift; sourceTree = SOURCE_ROOT; };
 		749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+air.swift"; path = "Sources/UIGestureRecognizer+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+air.swift"; path = "Sources/UIStackView+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -142,6 +150,12 @@
 		74E106261F1E7FFF00178BCF /* Device+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Device+air.swift"; path = "Sources/Device+air.swift"; sourceTree = SOURCE_ROOT; };
 		74E106281F1E803F00178BCF /* CollectionView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CollectionView+air.swift"; path = "Sources/CollectionView+air.swift"; sourceTree = SOURCE_ROOT; };
 		74E1062A1F1E823000178BCF /* airLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = airLogging.swift; path = Sources/airLogging.swift; sourceTree = SOURCE_ROOT; };
+		74E3331020252AFE0069C86B /* SizingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SizingCollectionView.swift; path = Sources/SizingCollectionView.swift; sourceTree = SOURCE_ROOT; };
+		74E3331220252B090069C86B /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchTableViewCell.swift; path = Sources/SwitchTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		74E3331320252B090069C86B /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SwitchTableViewCell.xib; path = Sources/SwitchTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		74E3331620252B100069C86B /* TappableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TappableTextView.swift; path = Sources/TappableTextView.swift; sourceTree = SOURCE_ROOT; };
+		74E3331820252B190069C86B /* Int+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+air.swift"; path = "Sources/Int+air.swift"; sourceTree = SOURCE_ROOT; };
+		74E3331A20252B1D0069C86B /* CoreData+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CoreData+air.swift"; path = "Sources/CoreData+air.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +213,17 @@
 			path = "Swift Tests";
 			sourceTree = "<group>";
 		};
+		7464A8392024EC2D00ECCDF1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74E3331020252AFE0069C86B /* SizingCollectionView.swift */,
+				74E3331620252B100069C86B /* TappableTextView.swift */,
+				74E3331220252B090069C86B /* SwitchTableViewCell.swift */,
+				74E3331320252B090069C86B /* SwitchTableViewCell.xib */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		74A771FE2007EC360039EEC0 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +263,7 @@
 				74E105D11F1E783E00178BCF /* airUtilities.h */,
 				74E105D21F1E783E00178BCF /* Info.plist */,
 				7448C7F0200FC52F00FBDB55 /* .travis.yml */,
+				7464A8392024EC2D00ECCDF1 /* Components */,
 				74E105EA1F1E78A400178BCF /* Swift */,
 				74E105EF1F1E78E300178BCF /* UIKit */,
 				74E1062A1F1E823000178BCF /* airLogging.swift */,
@@ -262,6 +288,7 @@
 				745F05EC20102428005CAC0B /* Bool+air.swift */,
 				74E106021F1E7B8300178BCF /* Dictionary+air.swift */,
 				74E106241F1E7FEB00178BCF /* IndexPath+air.swift */,
+				74E3331820252B190069C86B /* Int+air.swift */,
 				74E105FE1F1E7B7B00178BCF /* Result.swift */,
 				74E105FC1F1E7B7600178BCF /* String+air.swift */,
 				74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */,
@@ -272,11 +299,14 @@
 		74E105EF1F1E78E300178BCF /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				74E106041F1E7B8600178BCF /* UIButton+ClosureHandler.swift */,
 				74E106281F1E803F00178BCF /* CollectionView+air.swift */,
+				74E3331A20252B1D0069C86B /* CoreData+air.swift */,
 				74E106261F1E7FFF00178BCF /* Device+air.swift */,
 				749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */,
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
+				74DB61C3201663AA00533DED /* PropertyInitializers.swift */,
+				74E106041F1E7B8600178BCF /* UIButton+ClosureHandler.swift */,
+				7464A83720238FBD00ECCDF1 /* UIColor+air.swift */,
 				74CED06D201656C900104915 /* UIEdgeInsets+air.swift */,
 				749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */,
 				74E1061E1F1E7FD300178BCF /* UIImage+air.swift */,
@@ -288,7 +318,6 @@
 				74E106201F1E7FD300178BCF /* UIView+air.swift */,
 				74E106101F1E7E0700178BCF /* UIViewController+air.swift */,
 				74E106141F1E7E2500178BCF /* Window+air.swift */,
-				74DB61C3201663AA00533DED /* PropertyInitializers.swift */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -426,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E3331520252B090069C86B /* SwitchTableViewCell.xib in Resources */,
 				7448C7F1200FC53000FBDB55 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,13 +486,17 @@
 				74E106051F1E7B8600178BCF /* UIButton+ClosureHandler.swift in Sources */,
 				74E106251F1E7FEB00178BCF /* IndexPath+air.swift in Sources */,
 				74E106271F1E7FFF00178BCF /* Device+air.swift in Sources */,
+				74E3331B20252B1E0069C86B /* CoreData+air.swift in Sources */,
 				74E106011F1E7B8000178BCF /* NetworkIndicator+air.swift in Sources */,
 				745F05ED20102428005CAC0B /* Bool+air.swift in Sources */,
 				74E106111F1E7E0700178BCF /* UIViewController+air.swift in Sources */,
+				74E3331420252B090069C86B /* SwitchTableViewCell.swift in Sources */,
 				74E106171F1E7E2500178BCF /* Window+air.swift in Sources */,
 				74E105FF1F1E7B7B00178BCF /* Result.swift in Sources */,
+				7464A83820238FBD00ECCDF1 /* UIColor+air.swift in Sources */,
 				74E106221F1E7FD300178BCF /* UITableView+air.swift in Sources */,
 				74E105FD1F1E7B7600178BCF /* String+air.swift in Sources */,
+				74E3331120252AFE0069C86B /* SizingCollectionView.swift in Sources */,
 				749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */,
 				74E106291F1E803F00178BCF /* CollectionView+air.swift in Sources */,
 				74CED06E201656C900104915 /* UIEdgeInsets+air.swift in Sources */,
@@ -470,9 +504,11 @@
 				749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */,
 				74DB61C4201663AA00533DED /* PropertyInitializers.swift in Sources */,
 				74E106151F1E7E2500178BCF /* UITextField+air.swift in Sources */,
+				74E3331720252B100069C86B /* TappableTextView.swift in Sources */,
 				74E106031F1E7B8300178BCF /* Dictionary+air.swift in Sources */,
 				74E106211F1E7FD300178BCF /* UIImage+air.swift in Sources */,
 				74E1062B1F1E823000178BCF /* airLogging.swift in Sources */,
+				74E3331920252B190069C86B /* Int+air.swift in Sources */,
 				74E106231F1E7FD300178BCF /* UIView+air.swift in Sources */,
 				749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */,
 				745F05EF20102433005CAC0B /* UILabel+air.swift in Sources */,

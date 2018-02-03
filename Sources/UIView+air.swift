@@ -22,6 +22,7 @@ public extension UIView {
     }
 }
 
+// MARK: - Layer
 public extension UIView {
     /// Applies a rounded mask and matching border to a view
     ///
@@ -29,23 +30,25 @@ public extension UIView {
     ///   - corners: Which corners to round
     ///   - radius: The corner radius to apply to `corners`
     ///   - borderColor: The color of the border
-    public func round(corners: UIRectCorner, radius: Int, borderColor: UIColor? = nil) {
+    public func round(corners: UIRectCorner, radius: Int, borderColor: UIColor? = nil, borderWidth: CGFloat? = nil) {
         let maskLayer = CAShapeLayer()
         let roundedPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         maskLayer.path = roundedPath.cgPath
         layer.mask = maskLayer
         
-        if let borderColor = borderColor {
+        if let borderColor = borderColor,
+            let borderWidth = borderWidth {
             let borderLayer = CAShapeLayer()
             borderLayer.path = roundedPath.cgPath
             borderLayer.strokeColor = borderColor.cgColor
-            borderLayer.lineWidth = 1.0
+            borderLayer.lineWidth = borderWidth
             borderLayer.fillColor = UIColor.clear.cgColor
             layer.addSublayer(borderLayer)
         }
     }
 }
 
+// MARK: - AutoLayout
 public extension UIView {
     /// Fill self with the provided view.
     ///
