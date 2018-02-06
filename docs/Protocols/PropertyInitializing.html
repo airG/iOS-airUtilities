@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bool Extension Reference</title>
+    <title>PropertyInitializing Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/Bool" class="dashAnchor"></a>
-    <a title="Bool Extension Reference"></a>
+    <a name="//apple_ref/swift/Protocol/PropertyInitializing" class="dashAnchor"></a>
+    <a title="PropertyInitializing Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">airUtilities Docs</a> (100% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">airUtilities Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Bool Extension Reference
+        PropertyInitializing Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -161,14 +161,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Bool</h1>
+            <h1>PropertyInitializing</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">struct</span> <span class="kt">Bool</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PropertyInitializing</span></code></pre>
 
                 </div>
               </div>
-            
+            <p><code>PropertyInitializing</code> allows you to initialize and set preperties with a property function</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -176,9 +177,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:Sb12airUtilitiesE6toggleyyF"></a>
-                    <a name="//apple_ref/swift/Method/toggle()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Sb12airUtilitiesE6toggleyyF">toggle()</a>
+                    <a name="/s:12airUtilities20PropertyInitializingPxycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12airUtilities20PropertyInitializingPxycfc">init()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -186,14 +187,50 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Toggles the value of self, instead of having to reassign</p>
+                        <p>Needed for the PropertyInitializing protocol extension</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">toggle</span><span class="p">()</span></code></pre>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:12airUtilities20PropertyInitializingPAAExyxc10properties_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(properties:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:12airUtilities20PropertyInitializingPAAExyxc10properties_tcfc">init(properties:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>let label = UILabel {
+   $0.textColor = .red
+}</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">properties</span><span class="p">:</span> <span class="p">((</span><span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">))</span></code></pre>
 
                         </div>
                       </div>

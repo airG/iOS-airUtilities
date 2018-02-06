@@ -18,9 +18,26 @@ You can also use Cocoapods to install. Add `pod 'airUtilities'` to your podfile.
 
 `airLogging` is a convenient interface onto the system `os_log` if supported, or simple `NSLog` if debug. Example:  `Log("Check this out", as: .debug)`
 
+airUtilities also contains some nice generics around working with TableViews and CollectionViews. You can register a class or nib using `tableView.registerNib(of: CustomTableViewCell.self)` and then dequeue it with `let cell: CustomTableViewCell = tableView.dequeueCell(for: indexPath)`.
 
+`PropertyInitializing` allows you to initialize and set preperties on an object in a trailing closure, for example:
 
+```
+let label = UILabel {
+    $0.textColor = .red
+}
+```
 
+The handler extension on `UIButton` supports actions via closure, example: `button.handle(.touchUpInside, with: { print("Tapped!") })` or even:
+```
+button.handle(.touchUpInside) {
+    print("Tapped!")
+}
+```
+
+Adds class vars for `Identifier` and `Nib` for views and ViewControllers, based on `String(describing: self)`.
+
+And many more, poke around the docs to find them.
 
 ## Documentation
 

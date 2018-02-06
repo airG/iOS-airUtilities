@@ -1,6 +1,12 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/stevent/airG/GitHub repos/airUtilities/Sources/PropertyInitializing.swift",
+      "line": 13,
+      "symbol": "PropertyInitializing.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/stevent/airG/GitHub repos/airUtilities"
 }

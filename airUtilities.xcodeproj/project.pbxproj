@@ -38,7 +38,7 @@
 		74CED06E201656C900104915 /* UIEdgeInsets+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CED06D201656C900104915 /* UIEdgeInsets+air.swift */; };
 		74CED070201656F000104915 /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CED06F201656F000104915 /* UIEdgeInsetsTests.swift */; };
 		74D76D762009357600180B71 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D76D752009357600180B71 /* ArrayTests.swift */; };
-		74DB61C4201663AA00533DED /* PropertyInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB61C3201663AA00533DED /* PropertyInitializers.swift */; };
+		74DB61C4201663AA00533DED /* PropertyInitializing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB61C3201663AA00533DED /* PropertyInitializing.swift */; };
 		74E105D81F1E783E00178BCF /* airUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E105CE1F1E783E00178BCF /* airUtilities.framework */; };
 		74E105DF1F1E783E00178BCF /* airUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E105D11F1E783E00178BCF /* airUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74E105FB1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E105FA1F1E7B7100178BCF /* URL+ExpressibleByStringLiteral.swift */; };
@@ -129,7 +129,7 @@
 		74CED06D201656C900104915 /* UIEdgeInsets+air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIEdgeInsets+air.swift"; path = "Sources/UIEdgeInsets+air.swift"; sourceTree = SOURCE_ROOT; };
 		74CED06F201656F000104915 /* UIEdgeInsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsTests.swift; sourceTree = "<group>"; };
 		74D76D752009357600180B71 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
-		74DB61C3201663AA00533DED /* PropertyInitializers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PropertyInitializers.swift; path = Sources/PropertyInitializers.swift; sourceTree = SOURCE_ROOT; };
+		74DB61C3201663AA00533DED /* PropertyInitializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PropertyInitializing.swift; path = Sources/PropertyInitializing.swift; sourceTree = SOURCE_ROOT; };
 		74E105CE1F1E783E00178BCF /* airUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = airUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E105D11F1E783E00178BCF /* airUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = airUtilities.h; sourceTree = "<group>"; };
 		74E105D21F1E783E00178BCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 				74E106261F1E7FFF00178BCF /* Device+air.swift */,
 				749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */,
 				74E106001F1E7B8000178BCF /* NetworkIndicator+air.swift */,
-				74DB61C3201663AA00533DED /* PropertyInitializers.swift */,
+				74DB61C3201663AA00533DED /* PropertyInitializing.swift */,
 				74E106041F1E7B8600178BCF /* UIButton+ClosureHandler.swift */,
 				7464A83720238FBD00ECCDF1 /* UIColor+air.swift */,
 				74CED06D201656C900104915 /* UIEdgeInsets+air.swift */,
@@ -506,7 +506,7 @@
 				74CED06E201656C900104915 /* UIEdgeInsets+air.swift in Sources */,
 				7448C7FD201021AB00FBDB55 /* UITextView+air.swift in Sources */,
 				749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */,
-				74DB61C4201663AA00533DED /* PropertyInitializers.swift in Sources */,
+				74DB61C4201663AA00533DED /* PropertyInitializing.swift in Sources */,
 				74E106151F1E7E2500178BCF /* UITextField+air.swift in Sources */,
 				74E3331720252B100069C86B /* TappableTextView.swift in Sources */,
 				74E106031F1E7B8300178BCF /* Dictionary+air.swift in Sources */,

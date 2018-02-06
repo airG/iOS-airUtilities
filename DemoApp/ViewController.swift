@@ -10,11 +10,6 @@ import UIKit
 import airUtilities
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
     
     internal override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -25,13 +20,13 @@ class ViewController: UIViewController {
         Log("H4", as: .error, category: "BadFlow")
         Log("H5", as: .error, category: "CoolFlow")
     }
-
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let l = UILabel {
+            $0.textColor = .red
+        }
+        print(l.textColor)
     }
-
-
 }
-
