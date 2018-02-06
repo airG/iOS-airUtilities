@@ -24,6 +24,7 @@
 		745F05F3201025BD005CAC0B /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F05F2201025BD005CAC0B /* ResultTests.swift */; };
 		745F05F520112DB8005CAC0B /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F05F420112DB8005CAC0B /* DictionaryTests.swift */; };
 		7464A83820238FBD00ECCDF1 /* UIColor+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7464A83720238FBD00ECCDF1 /* UIColor+air.swift */; };
+		747879722028D37F00BC001E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 747879712028D37F00BC001E /* README.md */; };
 		749D09EC1FE47F30000E9FF4 /* DynamicTextHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */; };
 		749D09EE1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */; };
 		749D09F01FE47F47000E9FF4 /* UIStackView+air.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */; };
@@ -114,6 +115,7 @@
 		745F05F2201025BD005CAC0B /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		745F05F420112DB8005CAC0B /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		7464A83720238FBD00ECCDF1 /* UIColor+air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+air.swift"; path = "Sources/UIColor+air.swift"; sourceTree = SOURCE_ROOT; };
+		747879712028D37F00BC001E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		749D09EB1FE47F30000E9FF4 /* DynamicTextHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTextHandling.swift; path = Sources/DynamicTextHandling.swift; sourceTree = SOURCE_ROOT; };
 		749D09ED1FE47F41000E9FF4 /* UIGestureRecognizer+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+air.swift"; path = "Sources/UIGestureRecognizer+air.swift"; sourceTree = SOURCE_ROOT; };
 		749D09EF1FE47F47000E9FF4 /* UIStackView+air.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIStackView+air.swift"; path = "Sources/UIStackView+air.swift"; sourceTree = SOURCE_ROOT; };
@@ -260,6 +262,7 @@
 		74E105D01F1E783E00178BCF /* airUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				747879712028D37F00BC001E /* README.md */,
 				74E105D11F1E783E00178BCF /* airUtilities.h */,
 				74E105D21F1E783E00178BCF /* Info.plist */,
 				7448C7F0200FC52F00FBDB55 /* .travis.yml */,
@@ -455,6 +458,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747879722028D37F00BC001E /* README.md in Resources */,
 				74E3331520252B090069C86B /* SwitchTableViewCell.xib in Resources */,
 				7448C7F1200FC53000FBDB55 /* .travis.yml in Resources */,
 			);

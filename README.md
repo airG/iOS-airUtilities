@@ -7,9 +7,19 @@
 A framework of common iOS functions and extensions written in Swift.
 
 
-## How to use airUtilities
+## Installation
 
 Installation is best managed using Carthage. Add `github "airg/iOS-airUtilities"` to your cartfile and run `carthage install`, see [Carthage Installation Guide](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos).
+
+You can also use Cocoapods to install. Add `pod 'airUtilities'` to your podfile.
+
+
+## How to use airUtilities
+
+`airLogging` is a convenient interface onto the system `os_log` if supported, or simple `NSLog` if debug. Example:  `Log("Check this out", as: .debug)`
+
+
+
 
 
 ## Documentation
@@ -27,3 +37,12 @@ Documentation is generated using [Jazzy](https://github.com/realm/jazzy), a very
 ## Contributing
 
 Before opening a pull request, be sure to run `jazzy` to regenerate the docs.
+
+### To Do
+
+These are tasks that would be nice to implement soon, feel free to contribute!
+
+- Add a nicer interface onto the `%{public}s` keywords for logging
+- Consider an alternative to NSLog() when os_log is missing?
+- Add log to file support
+- Finish the test suite
