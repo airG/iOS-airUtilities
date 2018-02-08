@@ -1,5 +1,5 @@
 //
-//  Button+ClosureHandler.swift
+//  UIControl+ClosureHandler.swift
 //  airUtilities
 //
 //  Created by Steven Thompson on 2017-07-18.
@@ -8,25 +8,25 @@
 
 import Foundation
 
-public extension UIButton {
+public extension UIControl {
     public typealias EmptyClosure = (() -> Void)
 
     private struct AssociatedKeys {
-        static var UIButtonActionHandlerTapKey = "UIButtonActionHandlerTapKey"
+        static var UIControlActionHandlerTapKey = "UIControlActionHandlerTapKey"
     }
 
-    /// Closure based event handling for `UIButton`. `Handler` will be called when the button receives an event of type `event`.
+    /// Closure based event handling for `UIControl`. `Handler` will be called when the control emits an event of type `event`.
     ///
     /// - Parameters:
     ///   - event: Event that causes execution.
     ///   - handler: Closure you want executed on event.
     public func handle(_ event: UIControlEvents, with handler: EmptyClosure?) {
         let wrapper = ClosureWrapper(closure: handler)
-        objc_setAssociatedObject(self, &AssociatedKeys.UIButtonActionHandlerTapKey, wrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        objc_setAssociatedObject(self, &AssociatedKeys.UIControlActionHandlerTapKey, wrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         self.addTarget(self, action: #selector(callHandler(sender:)), for: event)
     }
 
-    /// Closure based event handling for `UIButton`. `Handler` will be called when the button receives an event of type `event`.
+    /// Closure based event handling for `UIControl`. `Handler` will be called when the control emits an event of type `event`.
     ///
     /// - Parameters:    
     ///   - handler: Closure you want executed on event.
@@ -36,15 +36,15 @@ public extension UIButton {
     }
 
     @objc private func callHandler(sender: AnyObject) {
-        let handler = objc_getAssociatedObject(self, &AssociatedKeys.UIButtonActionHandlerTapKey) as? ClosureWrapper
+        let handler = objc_getAssociatedObject(self, &AssociatedKeys.UIControlActionHandlerTapKey) as? ClosureWrapper
         handler?.closure?()
     }
 }
 
 fileprivate class ClosureWrapper: NSObject, NSCopying {
-    var closure: UIButton.EmptyClosure?
+    var closure: UIControl.EmptyClosure?
 
-    convenience init(closure: UIButton.EmptyClosure?) {
+    convenience init(closure: UIControl.EmptyClosure?) {
         self.init()
         self.closure = closure
     }
