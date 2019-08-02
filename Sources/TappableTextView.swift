@@ -9,8 +9,8 @@
 import UIKit
 
 class TappableTextView: UITextView {
-    static let UserNameTag: NSAttributedStringKey = NSAttributedStringKey(rawValue: "UserNameTag")
-    static let DefaultActionTag: NSAttributedStringKey = NSAttributedStringKey(rawValue: "DefaultActionTag")
+    static let UserNameTag: NSAttributedString.Key = NSAttributedString.Key(rawValue: "UserNameTag")
+    static let DefaultActionTag: NSAttributedString.Key = NSAttributedString.Key(rawValue: "DefaultActionTag")
     
     // self.attributedText is NSAttributedString!, and crashes on `get` on iOS 8. Set still works, so just set normally and then only return the right string based on iOS version
     override var attributedText: NSAttributedString! {

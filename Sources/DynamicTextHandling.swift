@@ -135,7 +135,7 @@ protocol DynamicTypeAdjusting: class {
 extension DynamicTypeAdjusting {
     internal func setContentSizeDidChangeHandler(_ handler: NotificationHandler?) {
         if let handler = handler {
-            let observer = NotificationCenter.default.addObserver(forName: Notification.Name.UIContentSizeCategoryDidChange,
+            let observer = NotificationCenter.default.addObserver(forName: UIContentSizeCategory.didChangeNotification,
                                                                   object: nil,
                                                                   queue: OperationQueue.main,
                                                                   using: handler)
@@ -166,16 +166,16 @@ extension UITextView: DynamicTypeAdjusting { }
 // MARK: - UIFont Helpers
 extension UIFont {
     /// Convenience, returns `self.fontDescriptor.textStyle`
-    public var textStyle: UIFontTextStyle? {
+    public var textStyle: UIFont.TextStyle? {
         return self.fontDescriptor.textStyle
     }
 }
 
 extension UIFontDescriptor {
     /// Tries to return the UIFontTextStyle based on NSCTFontUIUsageAttribute and hardcoded String names
-    public var textStyle: UIFontTextStyle? {
+    public var textStyle: UIFont.TextStyle? {
 
-        guard let fontAttribute = fontAttributes[UIFontDescriptor.AttributeName("NSCTFontUIUsageAttribute")] as? String else {
+        guard let fontAttribute = fontAttributes[UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")] as? String else {
             return nil
         }
 

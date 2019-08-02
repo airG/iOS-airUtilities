@@ -27,7 +27,7 @@ public extension UIViewController {
     @objc public func dismissSelf() {
         view.endEditing(false)
 
-        if let _ = presentingViewController, (navigationController == nil || navigationController?.viewControllers.index(of: self) == 0) {
+        if let _ = presentingViewController, (navigationController == nil || navigationController?.viewControllers.firstIndex(of: self) == 0) {
             dismiss(animated: true, completion: nil)
         } else {
             let _ = navigationController?.popViewController(animated: true)
@@ -41,11 +41,11 @@ public extension UIViewController {
     ///   - constraint: Constraint that will animate alongside the keyboard top. Normal use is a constraint to the bottom of the screen.
     func adaptKeyboard(to notification: Notification, constraint: NSLayoutConstraint) {
         if let userInfo = notification.userInfo {
-            let endFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-            let duration:TimeInterval = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
-            let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
-            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIViewAnimationOptions.curveEaseInOut.rawValue
-            let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+            let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            let duration:TimeInterval = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+            let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
+            let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
+            let animationCurve:UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
             if (endFrame?.origin.y)! >= UIScreen.main.bounds.size.height {
                 constraint.constant = 0.0
             } else {

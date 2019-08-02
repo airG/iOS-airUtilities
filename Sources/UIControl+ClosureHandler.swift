@@ -20,7 +20,7 @@ public extension UIControl {
     /// - Parameters:
     ///   - event: Event that causes execution.
     ///   - handler: Closure you want executed on event.
-    public func handle(_ event: UIControlEvents, with handler: EmptyClosure?) {
+    public func handle(_ event: UIControl.Event, with handler: EmptyClosure?) {
         let wrapper = ClosureWrapper(closure: handler)
         objc_setAssociatedObject(self, &AssociatedKeys.UIControlActionHandlerTapKey, wrapper, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         self.addTarget(self, action: #selector(callHandler(sender:)), for: event)
@@ -31,7 +31,7 @@ public extension UIControl {
     /// - Parameters:    
     ///   - handler: Closure you want executed on event.
     ///   - event: Event that causes execution.
-    public func add(handler: EmptyClosure?, for event: UIControlEvents) {
+    public func add(handler: EmptyClosure?, for event: UIControl.Event) {
         handle(event, with: handler)
     }
 

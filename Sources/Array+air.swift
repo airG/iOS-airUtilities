@@ -52,7 +52,7 @@ public extension Array where Element: Equatable {
     ///
     /// - Parameter element: Element to remove
     public mutating func removeElement(_ element: Element) {
-        if let index = self.index(of: element) {
+        if let index = self.firstIndex(of: element) {
             self.remove(at: index)
         }
     }
