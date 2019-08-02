@@ -49,6 +49,7 @@ public extension UIView {
 }
 
 // MARK: - AutoLayout
+@available(iOS, introduced: 9.0)
 public extension UIView {
     /// Fill self with the provided view.
     ///

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS, introduced: 9.0)
 public extension UIStackView {
     /// Removes all arranged subviews in `self.arrangedSubviews`
     public func removeAllArrangedSubviews() {

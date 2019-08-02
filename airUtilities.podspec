@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.name         = "airUtilities"
   s.version      = "1.3.2"
   s.summary      = "A collection of iOS utility functions and extensions."
+  s.swift_version = '4.2'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
